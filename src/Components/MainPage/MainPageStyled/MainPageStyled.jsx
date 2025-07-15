@@ -150,6 +150,21 @@ export const OurBestItems = styled.div`
   border-radius: 6px;
   cursor: pointer;
 
+  &:hover {
+    box-shadow: 2px 2px 22px 2px rgba(255, 255, 255, 0.26) inset;
+    transition: all 0.3s ease;
+  }
+  &:active {
+    box-shadow: 0.1px 0.1px 22px 0.1px rgba(255, 248, 154, 0.671) inset;
+    transition: all 0.3s ease;
+  }
+  &:focus-visible {
+    outline: 2px solid #ffdb3da4;
+    transform: scale(110%);
+    box-shadow: 1px 3px 3px 3px #ffdb3da4;
+    transition: all 0.3s ease;
+  }
+
   img {
     width: 100%;
     height: auto;

@@ -41,7 +41,7 @@ export default class OurBest extends Component {
           <OurBestItemsForm>
             {ourBestItems.map((item) => {
               return (
-                <OurBestItems key={item.id}>
+                <OurBestItems tabIndex={"0"} key={item.id}>
                   <img src={item.img} alt={item.alt} />
                   <span>{item.title}</span>
                   <p>{item.price}</p>
