@@ -71,3 +71,4 @@ export const FooterSection = styled(Container)`
   max-height: 150px;
   padding: 0;
 `;
+

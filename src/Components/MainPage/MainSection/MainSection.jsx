@@ -11,15 +11,16 @@ import {
 
 class MainSection extends Component {
   render() {
+    const { setPage, changePageFromNav } = this.props;
     return (
       <Container>
-        <Navigation />
+        <Navigation changePageFromNav={changePageFromNav} />
         <Main>
           <MainTitle>Everything You Love About Coffee</MainTitle>
           <img src={logoBr} alt="Зерно кофе"></img>
           <MainTitle>We makes every day full of energy and taste</MainTitle>
           <MainSubTitleText>Want to try our beans?</MainSubTitleText>
-          <MainButton>More</MainButton>
+          <MainButton onClick={() => setPage("coffee")}>More</MainButton>
         </Main>
       </Container>
     );

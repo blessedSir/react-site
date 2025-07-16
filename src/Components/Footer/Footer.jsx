@@ -8,7 +8,12 @@ export default class Footer extends Component {
     return (
       <FooterSection>
         <FooterWrapper>
-          <Navigation black={true} center={true} marginBottom={true} />
+          <Navigation
+            changePageFromNav={this.props.changePageFromNav}
+            $black={true}
+            $center={true}
+            $marginBottom={true}
+          />
           <img
             src={logoBrBlack}
             alt="Логотип"

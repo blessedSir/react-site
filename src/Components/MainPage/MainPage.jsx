@@ -6,12 +6,13 @@ import Footer from "../Footer/Footer";
 
 class MainPage extends Component {
   render() {
+    const { setPage, changePageFromNav } = this.props;
     return (
       <>
-        <MainSection />
+        <MainSection changePageFromNav={changePageFromNav} setPage={setPage} />
         <About />
         <OurBest />
-        <Footer />
+        <Footer changePageFromNav={this.props.changePageFromNav} />
       </>
     );
   }
