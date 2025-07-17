@@ -45,6 +45,8 @@ export const StyledLink = styled.a`
   font-weight: 400;
   font-size: 12px;
   color: ${(props) => (props.$black ? "#000" : "#fff")};
+  border-bottom: ${(props) =>
+    props.currentPage ? "2px solid #ffdb3da4" : "none"};
 
   &:hover {
     border-bottom: 2px inset #ffdb3da4;

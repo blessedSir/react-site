@@ -11,11 +11,19 @@ export const GridItemContainer = styled.div`
   box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   padding: 20px;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 5px 5px 35px 0 rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+  }
 `;
 
 export const GridItemImg = styled.img`
   max-width: 167px;
   max-height: 115px;
+  width: 100%;
+  height: 100%;
 `;
 
 export const GridItemTitle = styled.span`

@@ -36,3 +36,10 @@ export const GridTemplate = styled.div`
     max-height: 1620px;
   }
 `;
+
+export const OPPS = styled.div`
+  margin: 0 auto;
+  text-align: center;
+  max-width: 100%;
+  max-height: 100%;
+`;

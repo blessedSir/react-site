@@ -9,7 +9,7 @@ import {
 export default class GridItem extends Component {
   render() {
     return (
-      <GridItemContainer>
+      <GridItemContainer onClick={this.props.onClick}>
         <GridItemImg src={this.props.img} alt="" />
         <GridItemTitle>{this.props.title}</GridItemTitle>
         <GridItemCounry>{this.props.country}</GridItemCounry>

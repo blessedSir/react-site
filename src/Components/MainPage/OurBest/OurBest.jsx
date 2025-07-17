@@ -41,7 +41,18 @@ export default class OurBest extends Component {
           <OurBestItemsForm>
             {ourBestItems.map((item) => {
               return (
-                <OurBestItems tabIndex={"0"} key={item.id}>
+                <OurBestItems
+                  onClick={() =>
+                    this.props.changePageFromCoffeeItem(
+                      item.country,
+                      item.price,
+                      item.img,
+                      item.title
+                    )
+                  }
+                  tabIndex={"0"}
+                  key={item.id}
+                >
                   <img src={item.img} alt={item.alt} />
                   <span>{item.title}</span>
                   <p>{item.price}</p>

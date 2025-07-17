@@ -1,5 +1,6 @@
 import { Component } from "react";
 import aboutImg from "../../../assets/imgs/SectionsImg/girls_with_coffee.jpg";
+import blackWhite from "../../../assets/imgs/SectionsImg/coffee-black-white.jpg";
 import logoBlack from "../../../assets/icons/logo-br-black.svg";
 import { About, AboutText, Text, TopImg, H2, Logo, TextAdd } from "./styled";
 export default class AboutOurBeans extends Component {
@@ -7,9 +8,19 @@ export default class AboutOurBeans extends Component {
     return (
       <>
         <About>
-          <TopImg src={aboutImg} />
+          {this.props.anotherImg ? (
+            <TopImg src={blackWhite} />
+          ) : (
+            <TopImg src={aboutImg} />
+          )}
+
           <AboutText>
-            <H2>About our beans</H2>
+            {this.props.anotherTitle ? (
+              <H2>About our goods</H2>
+            ) : (
+              <H2>About our beans</H2>
+            )}
+
             <Logo src={logoBlack} />
             <Text>
               Extremity sweetness difficult behaviour he of. On disposal of as

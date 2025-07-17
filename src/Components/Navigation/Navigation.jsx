@@ -35,6 +35,7 @@ class Navigation extends Component {
                     ></img>
                   ) : null}
                   <StyledLink
+                    currentPage={this.props.currentPage === item.name}
                     $black={this.props.$black}
                     onClick={(e) => this.onClickA(e, item.id)}
                   >

@@ -5,10 +5,13 @@ import Navigation from "../../Navigation/Navigation";
 export default class OurCoffeeHeader extends Component {
   render() {
     return (
-      <Header>
-        <Navigation changePageFromNav={this.props.changePageFromNav} />
+      <Header anotherBanner={this.props.anotherBanner}>
+        <Navigation
+          currentPage={this.props.currentPage}
+          changePageFromNav={this.props.changePageFromNav}
+        />
         <HeaderBlock>
-          <h1>Our Coffee</h1>
+          {this.props.header ? <h1>For your pleasure</h1> : <h1>Our Coffee</h1>}
         </HeaderBlock>
       </Header>
     );
